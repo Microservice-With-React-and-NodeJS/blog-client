@@ -11,6 +11,7 @@ const PostCreate = () => {
       title
     });
     setTitle("");
+    window.location.reload();
   };
 
   return (
