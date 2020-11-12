@@ -4,3 +4,11 @@
 h3 {
   text-transform: capitalize;
 }
+
+p {
+  font-size: 10px;
+  justify-content: left;
+}
+ul {
+  font-size: 10px;
+}

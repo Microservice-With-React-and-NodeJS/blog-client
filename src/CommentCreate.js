@@ -1,7 +1,7 @@
-import react, { useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 
-export default ({ postId }) => {
+const CommentCreate = ({ postId }) => {
   const [content, setContent] = useState("");
 
   const onSubmit = async event => {
@@ -12,6 +12,7 @@ export default ({ postId }) => {
     });
 
     setContent(""); //to make the field blank again
+    window.location.reload();
   };
 
   return (
@@ -32,3 +33,5 @@ export default ({ postId }) => {
     </div>
   );
 };
+
+export default CommentCreate;
