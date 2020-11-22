@@ -1,6 +1,8 @@
 # specify the base image
 FROM node:10-alpine
 
+ENV CI=true
+
 # setup working directoty
 WORKDIR /app
 # copy over package.json file
